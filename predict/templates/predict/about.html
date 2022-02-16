@@ -59,7 +59,7 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav mx-auto py-0">
                         <a href="{% url 'home' %}"  class="nav-item nav-link">Accueil</a>
-                        <a href="{% url 'about' %}"  class="nav-item nav-link active">Qu’est-ce que Addictest ?</a>
+                        <a href="{% url 'about' %}"  class="nav-item nav-link active">Qu’est-ce que AddicTest ?</a>
                         <a href="{% url 'simulation' %}" href="" class="nav-item nav-link">Prédiction du risque d'addiction</a>
                     </div>
                     <a href="{% url 'admin:index'%}" class="btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Espace Admin</a>
@@ -70,13 +70,8 @@
                 <div class="container my-5 py-5 px-lg-5">
                     <div class="row g-5 py-5">
                         <div class="col-12 text-center">
-                            <h1 class="text-white animated slideInDown">Qu’est-ce que la Addictest ?</h1>
+                            <h1 class="text-white animated slideInDown">Qu’est-ce que Addictest ?</h1>
                             <hr class="bg-white mx-auto mt-0" style="width: 90px;">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb justify-content-center">
-                                    <li class="breadcrumb-item"><a class="text-white" href="#">Bienvenue sur AddicTest</a></li>
-                                </ol>
-                            </nav>
                         </div>
                     </div>
                 </div>
@@ -86,8 +81,8 @@
 
 
         <!-- Service Start -->
-        <div class="container-xxl py-5">
-            <div class="container py-5 px-lg-5">
+        <div class="container-xxl">
+            <div class="container px-lg-5">
                 <div class="wow fadeInUp" data-wow-delay="0.1s">
                     <p class="section-title text-secondary justify-content-center"><span></span>Nos services<span></span></p>
                     <h1 class="text-center mb-5">Prédictions que nous offrons</h1>
@@ -96,91 +91,101 @@
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="service-item d-flex flex-column text-center rounded">
                             <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-search fa-2x"></i>
+                                <i class="fa fa-wine-bottle fa-2x"></i>
                             </div>
-                            <h5 class="mb-3">Consommation d'Alcool</h5>
-                            <p class="m-0">L’alcool est une substance obtenue par fermentation de végétaux (fruits, céréales grains ou racines) riches en sucres comme : Le raisin pour le vin ou le cognac, La pomme (cidre) .</p>
-                            <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
+                            <h5 class="mb-3">Alcool</h5>
+                            <p class="m-0 text-justify">L’alcool est une substance obtenue par fermentation de végétaux (fruits, céréales grains ou racines).</p>
+                            <p class="m-0 text-start py-3"><b>Effets :</b> Perte de coordination, Augmentation de la pression artérielle, etc.</p>
+                            <a class="btn btn-square" href="{% url 'simulation' %}"><i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="service-item d-flex flex-column text-center rounded">
                             <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-laptop-code fa-2x"></i>
+                                <i class="fa fa-smoking fa-2x"></i>
                             </div>
-                            <h5 class="mb-3">Consommation de Nicotine</h5>
-                            <p class="m-0">La nicotine est un alcaloïde naturellement présent à forte concentration dans les feuilles du tabac. Notons qu’elle est aussi présente dans d’autres plantes comme la tomate et l’aubergine. Et sa toxicité protège la plante des insectes.</p>
-                            <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
+                            <h5 class="mb-3">Nicotine</h5>
+                            <p class="m-0 text-justify">La nicotine est un alcaloïde naturellement présent à forte concentration dans les feuilles du tabac.</p>
+                            <p class="m-0 text-start py-3"><b>Effets :</b> Dépendance physique, Utilisation compulsive, etc.</p>
+                            <a class="btn btn-square" href="{% url 'simulation' %}"><i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="service-item d-flex flex-column text-center rounded">
                             <div class="service-icon flex-shrink-0">
-                                <i class="fab fa-facebook-f fa-2x"></i>
+                                <i class="fa fa-cannabis fa-2x"></i>
                             </div>
-                            <h5 class="mb-3">Consommation de Cannabis</h5>
-                            <p class="m-0">Le Cannabis est considérée comme un dépresseur, un stimulant et un hallucinogène. Le médicament déclenche la libération de dopamine dans le cerveau et produit un "high" relaxant. L'ingrédient actif de l'herbe est le THC, qui produit le high que les gens ressentent lorsqu'ils l'utilisent.</p>
-                            <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
+                            <h5 class="mb-3">Cannabis</h5>
+                            <p class="m-0">Le cannabis déclenche la libération de dopamine dans le cerveau et produit un "high" relaxant avec l'ingrédient actif THC de l'herbe.</p>
+                            <p class="m-0 text-start py-2"><b>Effets : </b>Augmentation de l'anxiété et de la paranoïa, Hallucinations, etc.</p>
+                            <a class="btn btn-square" href="{% url 'simulation' %}"><i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="service-item d-flex flex-column text-center rounded">
                             <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-mail-bulk fa-2x"></i>
+                                <i class="fa fa-pills fa-2x"></i>
                             </div>
-                            <h5 class="mb-3">Consommation d'Amphet</h5>
-                            <p class="m-0">Les amphétamines sont des stimulants, ce qui signifie qu'elles accélèrent la vitesse de transmission des messages entre votre cerveau et votre corps. Les stimulants sur ordonnance traitent le ADHD, la narcolepsie et l'obésité.</p>
-                            <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
+                            <h5 class="mb-3">Amphétamine</h5>
+                            <p class="m-0">Substance chimique employée comme excitant du système nerveux central, ce qui signifie qu'elles accélèrent la vitesse de transmission des messages entre votre cerveau et votre corps.</p>
+                            <p class="m-0 text-start py-2"><b>Effets : </b>Dépression mentale, Agitation, sentiment d'irréalité, etc.</p>
+                            <a class="btn btn-square" href="{% url 'simulation' %}"><i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="service-item d-flex flex-column text-center rounded">
                             <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-thumbs-up fa-2x"></i>
+                                <i class="fa fa-prescription-bottle fa-2x"></i>
                             </div>
-                            <h5 class="mb-3">Consommation de Cocaïne</h5>
-                            <p class="m-0">La cocaïne est une substance hautement addictive et illégale qui entraîne une augmentation des niveaux d'énergie, de la vigilance, de l'euphorie et parfois de l'anxiété. Il est classé comme un stimulant du SNC (système nerveux central) et un anesthésique local.</p>
-                            <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
+                            <h5 class="mb-3">Cocaïne</h5>
+                            <p class="m-0">La cocaïne est une substance hautement addictive et illégale. Il est classé comme un stimulant du système nerveux central et un anesthésique local.</p>
+                            <p class="m-0 text-start py-3"><b>Effets : </b>Augmentation des niveaux d'énergie, de la vigilance, de l'euphorie, etc.</p>
+                            <a class="btn btn-square" href="{% url 'simulation' %}"><i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="service-item d-flex flex-column text-center rounded">
                             <div class="service-icon flex-shrink-0">
-                                <i class="fab fa-android fa-2x"></i>
+                                <i class="fa fa-pills fa-2x"></i>
                             </div>
-                            <h5 class="mb-3">Consommation d'Ecstasy</h5>
-                            <p class="m-0">L'ecstasy est considérée comme une « drogue de fête » parce que la plupart des consommateurs en consomment pour améliorer leur humeur pendant qu'ils font la fête. Le médicament est fabriqué par l'homme (synthétique) et peut avoir un impact négatif sur votre cerveau, votre corps et vos comportements.</p>
-                            <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
+                            <h5 class="mb-3">Ecstasy (MDMA)</h5>
+                            <p class="m-0">L'ecstasy est considérée comme une « drogue de fête » parce qu'elle est consomé pour améliorer l'humeur.</p>
+                            
+                            <p class="m-0 text-start py-4"><b>Effets : </b>Rythmes cardiaques anormaux, Lésions cérébrales dans le néocortex, etc.</p>
+                            <a class="btn btn-square" href="{% url 'simulation' %}"><i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="service-item d-flex flex-column text-center rounded">
                             <div class="service-icon flex-shrink-0">
-                                <i class="fab fa-android fa-2x"></i>
+                                <i class="fa fa-pills fa-2x"></i>
                             </div>
-                            <h5 class="mb-3">Consommation de Legalh</h5>
-                            <p class="m-0">Drogues contenant une ou plusieurs substances chimiques qui produisent des effets similaires à des drogues comme la cocaïne, le cannabis et l'ecstasy - et anciennement appelées "euphorisants légaux".</p>
-                            <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
+                            <h5 class="mb-3">Euphorisants légaux (Legalh)</h5>
+                            <p class="m-0">Drogues contenant une ou plusieurs substances chimiques qui produisent des effets similaires à des drogues comme la cocaïne, le cannabis et l'ecstasy.</p>
+                            <p class="m-0 text-start py-2"><b>Effets : </b>Dépression, psychose, paranoïa, anxiété, etc.</p>
+                            <a class="btn btn-square" href="{% url 'simulation' %}"><i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="service-item d-flex flex-column text-center rounded">
                             <div class="service-icon flex-shrink-0">
-                                <i class="fab fa-android fa-2x"></i>
+                                <i class="fa fa-pills fa-2x"></i>
                             </div>
-                            <h5 class="mb-3">Consommation de LSD</h5>
-                            <p class="m-0">Le LSD est un hallucinogène puissant et largement consommé, également connu sous le nom d'acide.</p>
-                            <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
+                            <h5 class="mb-3">LSD</h5>
+                            <p class="m-0">LSD est un hallucinogène puissant et largement consommé, également connu sous le nom d'acide.</p>
+                            <p class="m-0 text-start py-3"><b>Effets : </b>Hallucinations, Vision floue, Rythme cardiaque rapide, etc.</p>
+                            <a class="btn btn-square" href="{% url 'simulation' %}"><i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="service-item d-flex flex-column text-center rounded">
                             <div class="service-icon flex-shrink-0">
-                                <i class="fab fa-android fa-2x"></i>
+                                <i class="fa fa-prescription-bottle fa-2x"></i>
                             </div>
-                            <h5 class="mb-3">Consommation de Mushrooms</h5>
+                            <h5 class="mb-3">Mushrooms</h5>
                             <p class="m-0">Cette drogue est aussi appelée champis ou champignons magiques. C'est un type de champignon qui contient l'ingrédient psychoactif psilocybine.</p>
-                            <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
+                            <p class="m-0 text-start py-2"><b>Effets : </b>Désorientation, psychose, Dilatation de la pupille, etc.</p>
+                            <a class="btn btn-square" href="{% url 'simulation' %}"><i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -201,12 +206,12 @@
                     <div class="col-md-6 col-lg-4">
                         <p class="section-title text-white h5 mb-4">Quick Link<span></span></p>
                         <a href="{% url 'home' %}" class="btn btn-link">Accueil</a>
-                        <a href="{% url 'about' %}" class="btn btn-link">About Addictest</a>
-                        <a href="{% url 'simulation' %}" class="btn btn-link">Simulation</a>
+                        <a href="{% url 'about' %}" class="btn btn-link">Qu’est-ce que Addictest ?</a>
+                        <a href="{% url 'simulation' %}" class="btn btn-link">Simulation du risque d'addiction</a>
                     </div>
                     <div class="col-md-6 col-lg-4">
                         <p class="section-title text-white h5 mb-4">Newsletter<span></span></p>
-                        <p>Recevez les dernières nouveautés de notre application!</p>
+                        <p>Recevez les dernières nouveautés d'AddicTest!</p>
                         <div class="position-relative w-100 mt-3">
                             <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Votre Email" style="height: 48px;">
                             <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-primary fs-4"></i></button>
