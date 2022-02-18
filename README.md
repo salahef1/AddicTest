@@ -1,7 +1,7 @@
 # AddicTest
-AddicTest is an application that offers an interactive tool that allows you to simulate the risk of addiction using Machine Learning models.  
+AddicTest is a Django application that offers an interactive tool that allows users to predict the risk of addiction using Machine Learning models.  
 
-The data used consisted of several features such as collected personal information and psychological test results. As well as the level of legal and illegal drug use of more than 1880 participants, such as alcohol, nicotine, cannabis, cocaine, crack, ecstasy, heroin, etc.
+The data used consists of several features such as collected personal information and psychological test results. As well as the level of legal and illegal drug use of more than 1880 participants, such as alcohol, nicotine, cannabis, cocaine, crack, ecstasy, heroin, etc.
 
 
 ## Data Analysis
@@ -16,6 +16,7 @@ Effects of each drug are influenced by the following :
 3. What the person is doing while using the drugs
 4. Individual characteristics such as body size and health/psychological vulnerabilities
 5. How many different drugs are taken at one time  
+</br>
 
 ![plot](./graphs/average_drug_use.png)
 
